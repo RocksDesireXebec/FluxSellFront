@@ -1,0 +1,28 @@
+.login{
+    margin: 0px !important;
+    
+}
+
+.contenu > div:first-child img {
+    border-radius:  50%;
+    height: 10rem;
+}
+
+.contenu > div:first-child{
+    padding-top: 5rem; 
+}
+
+.contenu > div:last-child{
+    position: relative;
+    bottom: 0;
+    padding-bottom: 5rem; 
+    
+}
+
+.contenu > div:last-child i{
+    padding:0.5rem;
+}
+
+.contenu > div:first-child, .contenu > div:last-child{
+    text-align: center;
+}
