@@ -1,13 +1,84 @@
 body {
+  /*    Eh ! oui la large vaut zero, afin de coller au plafond
+      */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: left;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.fluxFooter > .container-fluid {
+  justify-content: center;
+}
+
+/**
+  Liste débordant l'ecran
+*/
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 5rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.produit .card {
+  height: 250px;
+  border: none;
+  width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.produit > p {
+  white-space: pre-wap;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: auto;
+  height: auto;
+}
+
+.produit > p p {
+  white-space: pre-wrap;
+}
+
+.offcanvas-title img {
+  border-radius: 50%;
+  height: 5rem;
+}
+
+.logonavbar{
+  border-radius: 50%;
+  height: 3rem;
+}
+
+.fixed-top{
+  padding-left: 5px;
+  padding-right: 5px;
 }
