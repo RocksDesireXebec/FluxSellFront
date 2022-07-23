@@ -12,7 +12,7 @@ function CategoriesListing() {
   //Recherche des categories
   useEffect(() => {
     axios
-      .get("https://localhost:8000/categories")
+      .get("https://agile-dawn-36258.herokuapp.com/categories")
       .then((response) => {
         const result = response.data["hydra:member"];
         setCategories(() => result);

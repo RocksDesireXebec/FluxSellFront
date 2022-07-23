@@ -41,7 +41,7 @@ const Login = () => {
     };
 
     axios
-      .post("https://127.0.0.1:8000/api/login", loginData)
+      .post("https://agile-dawn-36258.herokuapp.com/login", loginData)
       .then((response) => {
         localStorage.setItem("token", response.data.token);
         handleClick();

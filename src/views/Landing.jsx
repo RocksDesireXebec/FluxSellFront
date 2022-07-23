@@ -32,7 +32,7 @@ function Landing() {
   //Recherche des categories
   useEffect(() => {
     axios
-      .get("https://localhost:8000/categories")
+      .get("https://agile-dawn-36258.herokuapp.com/categories")
       .then((response) => {
         const result = response.data["hydra:member"];
         setCategories(() => result);
@@ -43,7 +43,7 @@ function Landing() {
   //Recherche des produits les plus populaires
   useEffect(() => {
     axios
-      .get("https://localhost:8000/mostpopular")
+      .get("https://agile-dawn-36258.herokuapp.com/mostpopular")
       .then((response) => {
         const result = response.data["hydra:member"];
         setMostPopular(() => result);
@@ -54,7 +54,7 @@ function Landing() {
   //Recherche des produits en promotions
   useEffect(() => {
     axios
-      .get("https://localhost:8000/promotions")
+      .get("https://agile-dawn-36258.herokuapp.com/promotions")
       .then((response) => {
         const result = response.data["hydra:member"];
         setPromotions(() => result);

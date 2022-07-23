@@ -36,7 +36,7 @@ function ProductDetails() {
   //Recherche de la categorie choisie, ensuite extraction des routes des produits de cette catégorie
   useEffect(() => {
     axios
-      .get(`https://localhost:8000/produits/${idP}`)
+      .get(`https://agile-dawn-36258.herokuapp.com/produits/${idP}`)
       .then((response) => {
         const result = response.data;
         setProduit(() => result);

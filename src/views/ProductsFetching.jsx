@@ -18,7 +18,7 @@ const ProductsFetching = (props) => {
     if (props.activeTab == props.tabId) {
       obj.map((route) => {
         axios
-          .get(`https://localhost:8000${route}`)
+          .get(`https://agile-dawn-36258.herokuapp.com${route}`)
           .then((response) => {
             console.log(produits);
             console.log(produits.length);

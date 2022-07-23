@@ -16,7 +16,7 @@ const CategoriesDeCategorie = () => {
   //Recherche de la categorie choisie
   useEffect(() => {
     axios
-      .get(`https://localhost:8000/categories/${id}`)
+      .get(`https://agile-dawn-36258.herokuapp.com/categories/${id}`)
       .then((response) => {
         const result = response.data;
         setCategorie(() => result);
@@ -31,7 +31,7 @@ const CategoriesDeCategorie = () => {
 
       sousCategories.map((cat) => {
         axios
-          .get(`https://localhost:8000${cat}`)
+          .get(`https://agile-dawn-36258.herokuapp.com${cat}`)
           .then((response) => {
             const result = response.data;
             setCategories((categories) => [...categories, result]);

@@ -40,7 +40,7 @@ function Purchase() {
 
   useEffect(() => {
     axios
-      .get(`https://localhost:8000/intentStripe/${idProduit}`)
+      .get(`https://agile-dawn-36258.herokuapp.com/intentStripe/${idProduit}`)
       .then((response) => {
         setClientSecret(response.data.client_secret); // Recuperation de l'intention de paiement
         setProduit(response.data.produit); // Recuperation du produit

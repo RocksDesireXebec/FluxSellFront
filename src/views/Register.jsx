@@ -78,7 +78,7 @@ const Register = () => {
     };
 
     axios
-      .post("https://127.0.0.1:8000/api/register", userData)
+      .post("https://agile-dawn-36258.herokuapp.com/register", userData)
       .then((response) => {
         console.log(response.data);
       })

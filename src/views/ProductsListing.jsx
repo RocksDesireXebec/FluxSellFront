@@ -16,7 +16,7 @@ function ProductsListing() {
   //Recherche de la categorie choisie, ensuite extraction des routes des produits de cette catégorie
   useEffect(() => {
     axios
-      .get(`https://localhost:8000/categories/${id}`)
+      .get(`https://agile-dawn-36258.herokuapp.com/categories/${id}`)
       .then((response) => {
         const result = response.data.produits;
         console.log(result);
@@ -30,7 +30,7 @@ function ProductsListing() {
     if (produits.length > 0) {
       produits.map((route) => {
         axios
-          .get(`https://localhost:8000${route}`)
+          .get(`https://agile-dawn-36258.herokuapp.com${route}`)
           .then((response) => {
             const result = response.data;
             setFetchedProduits((fetchedProduits) => [
